@@ -1,133 +1,123 @@
-📌 AI Resume Builder — Full-Stack SaaS App (React, Node.js, Gemini AI, ImageKit)
+# 📌 AI Resume Builder — Full-Stack SaaS App (React, Node.js, Gemini AI, ImageKit)
 
-Create, edit, enhance, and download professional resumes using an AI-powered full-stack application.
-Built with React + Vite, Node.js + Express, MongoDB, Google Gemini AI, and ImageKit for smart image processing.
+Create, enhance, and download professional resumes using an AI-powered full-stack application.  
+Built with **React + Vite**, **Node.js**, **Express**, **MongoDB**, **Google Gemini AI**, and **ImageKit**.
 
-🚀 Live Demo
-🌐 Frontend:
+---
 
-https://ai-resume-builder-rho-snowy.vercel.app/
+## 🚀 Live Demo
 
-🟩 Backend API:
+### 🌐 Frontend  
+🔗 https://ai-resume-builder-rho-snowy.vercel.app/
 
-https://ai-resume-builder-backend-ielq.onrender.com/
+### 🟩 Backend API  
+🔗 https://ai-resume-builder-backend-ielq.onrender.com/
 
-📖 About the Project
+---
 
-The AI Resume Builder is a modern SaaS-style resume creation tool powered by AI.
-It enables users to:
+## 📖 About the Project
 
-✔ Create and manage multiple resumes
-✔ Auto-fill sections with smart suggestions
-✔ Enhance content using Google Gemini AI
-✔ Clean profile images using background removal & face-center cropping
-✔ Preview resumes in real-time
-✔ Use multiple modern resume templates
-✔ Download resumes as PDF
-✔ Securely store data in MongoDB
-✔ Login/Register to access saved resumes
-✔ Share resume publicly via link
+The **AI Resume Builder** is a modern SaaS-style resume creation tool powered by AI. It enables users to:
 
-This project uses separate frontend and backend deployments (Vercel + Render) and follows real-world architecture.
+- ✔ Create and manage multiple resumes  
+- ✔ Auto‑fill sections with smart suggestions  
+- ✔ Enhance content using **Google Gemini AI**  
+- ✔ Clean profile images (background removal + face-centering)  
+- ✔ Preview resumes in real-time  
+- ✔ Use multiple modern templates  
+- ✔ Download resumes as PDF  
+- ✔ Securely store data in MongoDB  
+- ✔ Login/Register to access saved resumes  
+- ✔ Share resume publicly via link  
 
-✨ Features
-🔥 AI-Powered Enhancements
+This project uses **separate frontend and backend deployments (Vercel + Render)** and follows real‑world production architecture.
 
-Auto-generate resume summary (Gemini AI)
+---
 
-Improve job descriptions
+## ✨ Features
 
-Generate professional bullet points
+### 🔥 AI‑Powered Enhancements
+- Auto-generate resume summary (Gemini AI)  
+- Improve job descriptions  
+- Rewrite experience in professional tone  
+- Generate bullet points  
+- “One‑click Enhance” for all sections  
 
-Rewrite experience in a polished tone
+---
 
-“One-click Enhance” button for every section
+### 🎨 Resume Builder
+- Real-time WYSIWYG preview  
+- Modern templates  
+- Customizable fonts and layout  
+- Add/remove dynamic sections  
+- Auto-save to database  
+- Public shareable resume link  
 
-🎨 Resume Builder Tools
+---
 
-Real-time WYSIWYG preview
+### 🖼 Image Processing (ImageKit)
+- Remove background  
+- Auto crop + face-center  
+- Optimize for resume layouts  
 
-Multiple modern templates
+---
 
-Customizable fonts & styling
+### 🔐 Authentication & Dashboard
+- Register / Login  
+- JWT-based authentication  
+- Manage multiple resumes  
+- Edit / delete  
+- MongoDB cloud storage  
 
-Add/remove sections dynamically
+---
 
-Auto-save to database
+## 🧰 Tech Stack
 
-Public resume share link
+### Frontend  
+- React.js (Vite)  
+- Tailwind CSS  
+- React Router  
+- Zustand / Context API  
+- PDF Export tools  
 
-🖼 Image Processing
+### Backend  
+- Node.js  
+- Express.js  
+- MongoDB (Atlas)  
+- Mongoose  
+- CORS  
+- ImageKit SDK  
 
-Powered by ImageKit:
+### AI  
+- Google Gemini API  
+- OpenAI-compatible REST endpoint  
 
-Remove image background
+### Deployment  
+- **Frontend:** Vercel  
+- **Backend:** Render  
+- **Database:** MongoDB Atlas  
 
-Auto crop & face-center
+---
 
-Optimize for resume layouts
+## 🛠 Installation & Setup
 
-🔐 Authentication & Dashboard
-
-Register / Login
-
-JWT-based authentication
-
-Manage multiple resumes
-
-Edit / delete resumes
-
-Cloud-based storage in MongoDB
-
-📦 Tech Stack
-Frontend
-
-React.js (Vite)
-
-Tailwind CSS
-
-React Router
-
-Zustand / Context API (optional)
-
-PDF Export
-
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB + Mongoose
-
-CORS
-
-ImageKit SDK
-
-AI
-
-Google Gemini API (OpenAI-compatible endpoints)
-
-Deployment
-
-Backend: Render
-
-Frontend: Vercel
-
-Database: MongoDB Atlas
-
-🛠️ Installation & Setup
-1️⃣ Clone the repository
+### 1️⃣ Clone Repo
+```bash
 git clone https://github.com/sanjayrawatt/AI-Resume-Builder.git
 cd AI-Resume-Builder
+```
 
-2️⃣ Backend Setup
+---
+
+### 2️⃣ Backend Setup
+```bash
 cd server
 npm install
+```
 
+Create `.env`:
 
-Create .env in /server:
-
+```
 MONGODB_URI=your_mongo_uri
 JWT_SECRET=your_secret
 OPENAI_API_KEY=your_gemini_key
@@ -136,66 +126,64 @@ OPENAI_MODEL=gemini-2.5-flash
 IMAGEKIT_PRIVATE_KEY=your_key
 IMAGEKIT_PUBLIC_KEY=your_key
 IMAGEKIT_URL_ENDPOINT=your_url
+```
 
-
-Run server:
-
+Run:
+```bash
 npm start
+```
 
-3️⃣ Frontend Setup
+---
+
+### 3️⃣ Frontend Setup
+```bash
 cd client
 npm install
+```
 
-
-Create .env in /client:
-
+Create `.env`:
+```
 VITE_API_URL=http://localhost:3000
+```
 
-
-Run frontend:
-
+Run:
+```bash
 npm run dev
+```
 
-🌐 Deployment
-Backend (Render)
+---
 
-Set root directory: server
+## 🌐 Deployment Guide
 
-Build command: npm install
+### **Backend on Render**
+- Root Directory → `server`
+- Build Command → `npm install`
+- Start Command → `npm start`
+- Add environment variables  
+- Deploy  
 
-Start command: npm start
-
-Add all environment variables
-
-Deploy ✨
-
-Frontend (Vercel)
-
-Root directory: client
-
-Framework: Vite
-
-Environment variable:
-
+### **Frontend on Vercel**
+- Root Directory → `client`
+- Framework → Vite  
+- Add env:  
+```
 VITE_API_URL=https://your-backend.onrender.com
+```
+- Deploy  
 
+---
 
-Deploy ⚡
-
-📸 Screenshots
-
-(Add your screenshots here)
-
-🧩 Folder Structure
+## 📁 Folder Structure
+```
 AI-Resume-Builder/
 │
-├── client/                # React frontend
+├── client/          # React Frontend
 │   ├── src/
 │   ├── components/
 │   ├── templates/
 │   └── ...
 │
-├── server/                # Node backend
+├── server/          # Node Backend
 │   ├── configs/
 │   ├── controllers/
 │   ├── routes/
@@ -203,19 +191,21 @@ AI-Resume-Builder/
 │   └── server.js
 │
 └── README.md
+```
 
-🤝 Contributing
+---
 
-Pull requests are welcome!
-For major changes, open an issue first.
+## 🤝 Contributing
+Pull requests are welcome. For major changes, open an issue first.
 
-📜 License
+---
 
-This project is licensed under the MIT License.
+## 📜 License
+MIT License
 
-💬 Contact
+---
 
-Made by Sanjay Singh Rawat
-🔗 GitHub: https://github.com/sanjayrawatt
-
-🔗 Portfolio: https://sanjay-singh-rawat-portfolio.netlify.app/
+## 💬 Contact  
+**Sanjay Singh Rawat**  
+GitHub: https://github.com/sanjayrawatt  
+Portfolio: https://sanjay-singh-rawat-portfolio.netlify.app/
